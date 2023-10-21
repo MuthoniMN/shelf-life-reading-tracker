@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./fonts/NotoSans-LightItalic.ttf') format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Nunito';
+  src: url('./fonts/Nunito-Regular.ttf') format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Rokkitt';
+  src: url('./fonts/Rokkitt-Bold.ttf') format('truetype');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Rokkitt';
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  font-family: 'Nunito';
 }
