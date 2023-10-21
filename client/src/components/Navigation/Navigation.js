@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../logo.svg'
+import logo from '../../images/logo.svg'
 import Button from '../Button'
 import './Navigation.css'
 
@@ -10,7 +10,7 @@ export default function Navigation() {
             <h2>Shelf Life</h2>
             <div>
                 <Button text={"Log In"} />
-                <Button text={"Sign Up"} />
+                <Button text={"Sign Up"} type="cta" />
             </div>
         </nav>
     )

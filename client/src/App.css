@@ -24,4 +24,27 @@ h6{
 
 body{
   font-family: 'Nunito';
+  color: #130E01;
+}
+
+.home-hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 81vh;
+  background: url('./images/home-heroBackground.jpg');
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px #ffffea8a;
+}
+
+.cta{
+  color: #ffffea;
+  background: #174351;
+  box-shadow: 2px 1px 2px 2px #17455121;
+  transition: all 500ms ease-in-out;
+}
+
+.cta:hover{
+  transform: scale(1.1);
 }
