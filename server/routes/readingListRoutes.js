@@ -38,8 +38,9 @@ readingListRoutes.route('/reading-list/:id').get( (req, res) => {
 } )
 
 // adding a book to the reading list
-readingListRoutes.route('/reading-list').post( (req, res) => {
+readingListRoutes.route('/reading-list/new').post( (req, res) => {
     let db_connection = dbConn.getDB()
+    let date = new Date()
     let bookEntry = {
         name: req.body.name,
         description: req.body.description,
@@ -47,6 +48,7 @@ readingListRoutes.route('/reading-list').post( (req, res) => {
         img: req.body.coverImg,
         totalPages: req.body.pages,
         currentPage: req.body.currentPage || 0,
+        date: date.toLocaleDateString()
     }
 
     db_connection
@@ -77,7 +79,7 @@ readingListRoutes.route('/reading-list/:id').put( (req, res) => {
 } )
 
 // delete a book from the reading list
-readingListRoutes.route('/readin-list/:id').delete( (req, res) => {
+readingListRoutes.route('/reading-list/:id').delete( (req, res) => {
     let db_connection = dbConn.getDB();
     let queryId = ObjectId(req.params.id);
 
