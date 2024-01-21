@@ -8,10 +8,7 @@
   src: url('./fonts/Nunito-Regular.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'Rokkitt';
-  src: url('./fonts/Rokkitt-Bold.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 h1, 
 h2,
@@ -19,7 +16,7 @@ h3,
 h4,
 h5,
 h6{
-  font-family: 'Rokkitt';
+  font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -27,15 +24,10 @@ body{
   color: #130E01;
 }
 
-.home-hero{
+.flex{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  height: 81vh;
-  background: url('./images/home-heroBackground.jpg');
-  background-size: cover;
-  box-shadow: inset 0 0 0 2000px #ffffea8a;
 }
 
 .cta{
