@@ -9,8 +9,8 @@ const Sidebar = ({links, header, current, setCurrent}) => {
                     <h3>{header}</h3>
                 </li>
                 {links.map(a => (
-                    <li>
-                        <p className={current === a ? "active" : "genres"} onClick={() => setCurrent(a)}>{a}</p>
+                    <li> 
+                            <p className={current === a ? "active" : "genres"}  onClick={a === "All Genres" ? () => setCurrent("") : () => setCurrent(a)}>{a}</p>
                     </li>
                 ))}
                 <li>
